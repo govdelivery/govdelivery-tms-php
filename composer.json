@@ -1,13 +1,18 @@
 {
     "name": "govdelivery/tms-client",
-    "description": "A PHP client to interact with the GovDelivery TMS REST API.",
-    "keywords": ["sms", "voice"],
-    "homepage": "https://github.com/govdelivery/tms_client_php",
+    "description": "A PHP client to interact with the GovDelivery Targeted Messaging API.",
+    "keywords": ["email", "sms", "voice"],
+    "homepage": "https://github.com/govdelivery/govdelivery-tms-php",
     "authors": [
+        {
+            "name": "GovDelivery",
+            "email": "development@govdelivery.com",
+            "homepage": "http://developer.govdelivery.com/"
+        }
         {
             "name": "James Suess",
             "email": "james.suess@govdelivery.com",
-            "homepage": "http://govdelivery.com"
+            "homepage": "http://developer.govdelivery.com/"
         }
     ],
     "require": {
