@@ -7,7 +7,7 @@ Installation
 ### Using Composer
 
 ```
-composer require govdelivery/tms-client:dev-master
+composer require govdelivery/tms-client
 ```
 
 Usage
