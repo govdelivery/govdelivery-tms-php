@@ -15,6 +15,7 @@
             "homepage": "http://developer.govdelivery.com/"
         }
     ],
+    "license": "BSD-3-clause",
     "require": {
         "php": ">=5.3.0"
     },
