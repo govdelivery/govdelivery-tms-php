@@ -12,7 +12,7 @@ composer require govdelivery/tms-client
 
 Usage
 -----
-### Example
+### SMS Example
 
 ```php
 use \Tms\Client;
@@ -23,4 +23,27 @@ $sms = new Sms($client);
 $sms->build(array('body' => 'Hello. This is a test SMS.'));
 $sms->recipients->build(array('phone' => '+16125551234'));
 $sms->post();
+```
+
+### Email Example
+
+```php
+use \Tms\Client;
+use \TMS\Resource\Email;
+
+
+$client = new Client('{{YOURAUTHKEY}}');
+$email = new Email($client);
+$email->build(array(
+  'subject' => 'Check this email out!',
+  'body' => 'This is a really interesting email!',
+  'from_name' => 'John Doe',
+  'from_email' => 'john.doe@example.com',
+  'click_tracking_enabled' => true,
+  'open_tracking_enabled' => true,
+));
+$email->recipients->build(array('email' => 'jane.doe@example.com'));
+$email->recipients->build(array('email' => 'john.smith@example.com'));
+$email->recipients->build(array('email' => 'sally.jones@example.com'));
+$email->post();
 ```
