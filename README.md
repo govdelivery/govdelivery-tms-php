@@ -25,11 +25,17 @@ $sms->recipients->build(array('phone' => '+16125551234'));
 $sms->post();
 ```
 
+### Voice Example
+
+```
+TBA
+```
+
 ### Email Example
 
 ```php
 use \Tms\Client;
-use \TMS\Resource\Email;
+use \Tms\Resource\Email;
 
 
 $client = new Client('{{YOURAUTHKEY}}');
