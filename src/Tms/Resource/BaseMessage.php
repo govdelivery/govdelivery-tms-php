@@ -52,6 +52,6 @@ abstract class BaseMessage
             return $this->response = $error_response;
         }
 
-        return $this->response = json_decode(curl_exec($ch));
+        return $this->response = json_decode($response);
     }
 }
